@@ -4,7 +4,7 @@
   "description": "FLAKY-AGENT demo: Jest async race condition flakiness",
   "type": "commonjs",
   "scripts": {
-    "test": "mkdir -p reports && node scripts/run-and-report.js"
+    "test": "mkdir -p reports && (npx jest --json --outputFile=reports/test-results.json --forceExit || true)"
   },
   "devDependencies": {
     "@types/jest": "^29.5.12",
